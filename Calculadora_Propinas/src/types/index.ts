@@ -1,4 +1,4 @@
-export type TProducto = {
+export type TMenuItem = {
 
     id : number
     name: string
