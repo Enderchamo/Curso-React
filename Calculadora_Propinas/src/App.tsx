@@ -1,9 +1,12 @@
 import { menuItems } from "../src/data/data";
 import MenuItem from "../src/components/MenuItem";
+import useOrder from "./hooks/UseOrder";
 
 
 
 function App() {
+
+  const {addItem} = useOrder()
 
 
   return (
@@ -26,6 +29,7 @@ function App() {
 
             key={item.id}
             item={item}
+            addItem={addItem}
 
             />
 

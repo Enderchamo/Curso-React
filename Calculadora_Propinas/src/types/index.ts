@@ -5,3 +5,9 @@ export type TMenuItem = {
     price: number
 
 }
+
+export type OrderItem = TMenuItem &{
+
+    quantity: number
+
+}
