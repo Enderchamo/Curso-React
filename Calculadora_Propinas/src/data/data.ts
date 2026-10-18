@@ -1,6 +1,6 @@
-import type {TProducto} from "../types/index"
+import type {TMenuItem} from "../types/index"
 
-export const menuItems  : TProducto[] = [
+export const menuItems  : TMenuItem[] = [
     {
       "id": 1,
       "name": "Pizza a la Leña Chica",
