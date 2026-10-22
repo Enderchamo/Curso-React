@@ -24,10 +24,6 @@ export default function OrderConten({ order, removeItem }: OrderContenProps) {
 
 //Funciones
 function renderOrder(order: OrderItem[], removeItem: (id: number) => void) {
-  if (order.length === 0) {
-    return <p>Está vacío</p>;
-  }
-
   return order.map((item) => (
     <div
       key={item.id}
@@ -44,7 +40,8 @@ function renderOrder(order: OrderItem[], removeItem: (id: number) => void) {
       </div>
 
       <button
-        className="bg-red-600 h-8 rounded-full text-white font-black"
+        type="button"
+        className="flex items-center justify-center bg-red-600 hover:bg-red-700 transition-colors h-8 w-8 shrink-0 rounded-full text-white font-black"
         onClick={() => removeItem(item.id)}
       >
         x
